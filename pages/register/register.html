@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="/pages/register/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Nuit<span>Fest</span></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+            <form action="">
+
+                <div>
+                    <div><label>Nome</label></div>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <div><label>CPF/CNPJ</label></div>
+                    <input type="number" id="CPF">
+                </div>
+                <div>
+                    <div> <label>Email</label></div>
+                    <input type="email" id="email" name="email" onchange="onChangeEmail()" >
+                    <div class="error" id="email-required-error">
+                        Email é obrigatorio
+                    </div>
+                    <div class="error" id="email-invalid-error">
+                        Email é invalido
+                    </div>
+                </div>
+
+                <div>
+                    <div> <label>Senha</label></div>
+                    <input type="password" name="password" id="password"  onchange="onChangePassword()">
+                    <div class="error" id="password-required-error">
+                        senha é obrigatorio
+                    </div>
+                    <div class="error" id="password-min-length-error" >
+                        Senha deve conter pelo menos 6 caracteres
+                    </div>
+
+                </div>
+                <div>
+                    <div> <label>Confirmar Senha</label></div>
+                    <input type="password" name="password" id="confirmPassword" onchange="onChangeConfirmPassword()" >
+                     <div class="error" id="password-doenst-match-error">
+                        senha e confirmar senha devem ser iguais
+                    </div>
+                </div>
+
+                <div class="all-buttons">
+                     <button type="button" id="register-button" onclick="register()" disabled="true" >REGISTRAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="/pages/register/register.js"></script>
+<script src="../../loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js"></script>
+<script src="../../firebase.js"></script>
+</body>
+</html>

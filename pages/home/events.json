@@ -1,0 +1,138 @@
+[
+  {
+    "image": "/img/section-image-area/amado-batista.jpg",
+    "date": "12 DEZ",
+    "name": "Amado Batista",
+    "description": "Show inesquecível em São Paulo.",
+    "detailDescription": "Prepare-se para uma noite de muita emoção com o 'Mais Amado do Brasil'. Com mais de 40 anos de carreira, Amado Batista traz seus maiores sucessos como 'Secretária' e 'Folha Seca' para um show intimista e inesquecível. Uma oportunidade única para os fãs paulistanos reviverem grandes clássicos da música romântica em uma estrutura preparada para oferecer o máximo de conforto e qualidade sonora.",
+    "horario": "20:00",
+    "location": "Jardim das Flores - Rua Lírio Branco, 128",
+    "sectors": [
+      {
+        "name": "Pista Comum",
+        "price": 80.00,
+        "description": "Acesso geral à pista. Não inclui assento."
+      },
+      {
+        "name": "Camarote VIP",
+        "price": 350.00,
+        "description": "Área exclusiva, serviço de bar e banheiro privado."
+      },
+      {
+        "name": "Mesa Premium (4 Pessoas)",
+        "price": 600.00,
+        "description": "Mesa reservada na frente do palco para 4 pessoas."
+      }
+    ]
+  },
+  {
+    "image": "/img/section-image-area/lolapaloza.jpg",
+    "date": "20 JAN",
+    "name": "Lollapalooza",
+    "description": "3 dias de música e diversão.",
+    "detailDescription": "O Lollapalooza Brasil está de volta para mais uma edição épica! Serão três dias de imersão total no mundo da música, arte e gastronomia. Com diversos palcos espalhados pelo local, o festival reúne o melhor do indie, rock, hip-hop e eletrônica, trazendo grandes nomes internacionais e as revelações da música nacional. Além dos shows, aproveite as áreas de descanso, ativações de marcas e a famosa Lolla Food.",
+    "horario": "das 15:00 até 23:00",
+    "location": "Vila Esperança - Rua dos Cravos, 742",
+    "sectors": [
+      {
+        "name": "Passe de 3 Dias",
+        "price": 1200.00,
+        "description": "Acesso aos três dias do festival."
+      },
+      {
+        "name": "Dia Único",
+        "price": 500.00,
+        "description": "Acesso a um dia à sua escolha."
+      },
+      {
+        "name": "Lolla Lounge",
+        "price": 3000.00,
+        "description": "Acesso a área VIP com comidas e bebidas inclusas."
+      }
+    ]
+  },
+  {
+    "image": "/img/section-image-area/rock-in-rio.jpg",
+    "date": "15 SET",
+    "name": "Rock in Rio",
+    "description": "O maior festival de rock do Brasil.",
+    "detailDescription": "Viva a experiência definitiva do Rock in Rio! Conhecido mundialmente como a 'Cidade do Rock', o festival oferece muito mais do que música: é um parque de diversões gigante com roda-gigante, tirolesa e experiências tecnológicas. No palco principal, as maiores lendas do rock e pop mundial fazem apresentações históricas. Sinta a energia de milhares de vozes cantando juntas em um dos maiores espetáculos do planeta.",
+    "horario": "das 13:00 até as 23:00",
+    "location": "Centro Histórico - Rua Padre Américo, 55",
+    "sectors": [
+      {
+        "name": "Gramado",
+        "price": 450.00,
+        "description": "Área de visualização principal no gramado."
+      },
+      {
+        "name": "Rock Star Lounge",
+        "price": 1500.00,
+        "description": "Vista privilegiada e acesso a bares exclusivos."
+      }
+    ]
+  },
+  {
+    "image": "/img/section-image-area/festival-sertanejo.jpg",
+    "date": "08 MAR",
+    "name": "Festival Sertanejo",
+    "description": "Com os maiores nomes do sertanejo.",
+    "detailDescription": "O coração vai bater mais forte no Festival Sertanejo! Uma reunião imperdível dos maiores nomes do gênero no Brasil, trazendo do sertanejo raiz ao universitário que domina as paradas. O evento conta com uma megaestrutura de palco, som e luzes, além de uma praça de alimentação completa. Prepare o chapéu e a bota para curtir horas de música boa e muita sofrência!",
+    "horario": "20:00",
+    "location": "Parque Verde - Avenida das Palmeiras, 901",
+    "sectors": [
+      {
+        "name": "Pista Comum",
+        "price": 150.00,
+        "description": "Acesso geral."
+      },
+      {
+        "name": "Área Prime",
+        "price": 400.00,
+        "description": "Setor mais próximo ao palco com entrada diferenciada."
+      }
+    ]
+  },
+  {
+    "image": "/img/section-image-area/sunset beats.jpg",
+    "date": "02 JUN",
+    "name": "Sunset Beats",
+    "description": "A vibe do verão em um só evento.",
+    "detailDescription": "Celebre o pôr do sol ao som das melhores batidas eletrônicas no Sunset Beats. O evento perfeito para quem quer curtir a energia do verão com os amigos. Com DJs de renome nacional e internacional, o clima é de festa constante. O setor Poolside oferece uma experiência diferenciada à beira da piscina, ideal para quem quer se refrescar sem perder o ritmo da música.",
+    "horario": "10:00 ",
+    "location": "Residencial Aurora - Rua Estrela da Manhã, 203",
+    "sectors": [
+      {
+        "name": "Pista",
+        "price": 120.00,
+        "description": "Setor Pista."
+      },
+      {
+        "name": "Área Externa (Poolside)",
+        "price": 250.00,
+        "description": "Acesso à área da piscina."
+      }
+    ]
+  },
+  {
+    "image": "/img/section-image-area/hallowen.jpg",
+    "date": "30 OUT",
+    "name": "Halloween Party",
+    "description": "Uma noite assustadora e divertida.",
+    "detailDescription": "A festa mais horripilante do ano chegou! Venha fantasiado e prepare-se para surpresas assustadoras em cada canto da nossa Halloween Party. Com decoração temática imersiva, drinks 'sangrentos' e trilha sonora comandada por DJs que não vão deixar ninguém parado, a noite promete ser terrível... de boa! O setor Open Bar garante que a diversão não tenha limites até o amanhecer.",
+    "horario": "20:00",
+    "location": "Bairro Industrial - Rua das Ferragens, 450",
+    "sectors": [
+      {
+        "name": "Ingresso Simples",
+        "price": 50.00,
+        "description": "Acesso básico."
+      },
+      {
+        "name": "Open Bar",
+        "price": 200.00,
+        "description": "Acesso a todas as bebidas por conta da casa."
+      }
+    ]
+  }
+]

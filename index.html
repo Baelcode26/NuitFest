@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <title>NuitFest</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Nuit<span>Fest</span></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+            <form action="">
+                <div>
+                    <div> <label>Email</label></div>
+                    <input type="email" id="email" name="email"  onchange="onChangeEmail()">
+                    <div class="error" id="email-required-error">Email é obrigatorio</div>
+                    <div class="error" id="email-invalid-error">Email é invalido</div>
+                </div>
+                <div>
+                    <div> <label>Senha</label></div>
+                    <input type="password" name="password" id="password" onchange="onChangePassword()" >
+                    <div class="error" id="password-required-error">Senha é obrigatoria</div>
+                </div>
+                <div class="all-buttons">
+                     <button type="button" id ="forgot-password" disabled="true" onclick="recoverPassword()">Esqueceu a Senha?</button>
+                     <button type="button" id ="login" disabled="true"  onclick="loginUser()">Login</button>
+                     <button type="button" class="Register" onclick="registerUser()">
+                        Ainda nao tem uma conta ? 
+                        <span>Registre-se</span> <br>
+                         <span class="ou">OU</span></button>
+
+                     <button type="button" class="Register-face"><i class="bi bi-facebook"></i>Fazer login com FACEBOOK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+    <script src="/script.js"></script>
+    <script src="/loading.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.3.0/firebase-auth-compat.js"></script>
+    <script src="/firebase.js"></script>
+</html>

@@ -69,7 +69,7 @@ async function carregarEventos() {
     try {
         const resposta = await fetch("/pages/home/events.json");
         const eventos = await resposta.json();
-        listaDeEventosGlobal = eventos; // Salva aqui para usar no clique
+        listaDeEventosGlobal = eventos; 
 
         grid.innerHTML = ""; 
         eventos.forEach(evento => {
@@ -103,13 +103,18 @@ grid.addEventListener('click', (e) => {
     if (eventoEncontrado) {
         const sidebar = document.querySelector('.modal-sidebar-sectors');
         const imgArea = document.querySelector('.modal-img-area')
-        const detailsArea = document.querySelector('.modal-details-area')
+        const detailsArea = document.querySelector('.modal-details-area');
+
         
         // Limpa a sidebar e mantém apenas o título
         sidebar.innerHTML = '<h2>Selecione um setor</h2>';
 
-        //Adiciona as informacoes do pop up dinamicamente
+        imgArea.style.backgroundImage = `linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('${eventoEncontrado.image}')`;
+        imgArea.style.backgroundSize = 'cover';
+        imgArea.style.backgroundPosition = 'center';
 
+
+        //Adiciona as informacoes do pop up dinamicamente
             imgArea.innerHTML = `
                 <div class="event-header-content">
                   <div class = "event-text-info">
@@ -134,11 +139,39 @@ grid.addEventListener('click', (e) => {
         </div>
         <div class="purchase-card">
             <div class="purchase-info">
+                <h2 id = "price-display"></h2>
                 <span>Pague em até 12x</span>
             </div>
             <button class="btn-buy-now">Comprar ingressos</button>
         </div>
     `;
+
+     const btnBuy = document.querySelector('.btn-buy-now')
+
+btnBuy.addEventListener('click', () => {
+          const setorSelecionado = document.querySelector('.sector-item-card.selected');
+
+          if (!setorSelecionado) {
+            alert("Por favor, selecione um setor antes de continuar!");
+            return
+          }
+
+          const dadosCompra = {
+            evento: eventoEncontrado.name,
+            data: eventoEncontrado.date,
+            local: eventoEncontrado.location,
+            imagem: eventoEncontrado.image,
+            setor: setorSelecionado.querySelector('h4').textContent,
+            preco: setorSelecionado.querySelector('p').textContent
+          }
+
+          localStorage.setItem('nuitfest_checkout', JSON.stringify(dadosCompra));
+
+          window.location.href = "../checkout/checkout.html"
+        })
+
+
+     
 
         // Cria os setores dinamicamente
         eventoEncontrado.sectors.forEach(setor => {
@@ -151,6 +184,18 @@ grid.addEventListener('click', (e) => {
                     <p>R$ ${setor.price.toFixed(2).replace('.', ',')}</p>
                 </div>
             `;
+
+            divSetor.addEventListener('click', () =>{
+              document.querySelectorAll('.sector-item-card').forEach(card => {
+                card.classList.remove('selected')
+              });
+              divSetor.classList.add('selected');
+
+              const priceDisplay = document.getElementById('price-display');
+              priceDisplay.textContent = `R$ ${setor.price.toFixed(2).replace('.', ',')}`;
+              priceDisplay.style.color = "#c1288e"
+            })
+
             sidebar.appendChild(divSetor);
         });
 

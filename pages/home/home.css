@@ -539,7 +539,7 @@ header nav ul .active {
         width: 250px;
     }
     
-    .modal-details-area{
+     .modal-details-area{
         display: flex;
         flex-direction: column  ;
     }

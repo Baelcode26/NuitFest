@@ -140,7 +140,7 @@ header nav ul .active {
     width: 100%;
     min-height: 100vh;
     height: auto;
-    background-image: url("../img/BACKGROUND-SECTION.jpg");
+    background-image: url("../../img/BACKGROUND-SECTION.jpg");
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;

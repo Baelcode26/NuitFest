@@ -1,6 +1,6 @@
 [
   {
-    "image": "../img/section-image-area/amado-batista.jpg",
+    "image": "../../img/section-image-area/amado-batista.jpg",
     "date": "12 DEZ",
     "name": "Amado Batista",
     "description": "Show inesquecível em São Paulo.",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "image": "../img/section-image-area/lolapaloza.jpg",
+    "image": "../../img/section-image-area/lolapaloza.jpg",
     "date": "20 JAN",
     "name": "Lollapalooza",
     "description": "3 dias de música e diversão.",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "image": "../img/section-image-area/rock-in-rio.jpg",
+    "image": "../../img/section-image-area/rock-in-rio.jpg",
     "date": "15 SET",
     "name": "Rock in Rio",
     "description": "O maior festival de rock do Brasil.",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "image": "../img/section-image-area/festival-sertanejo.jpg",
+    "image": "../../img/section-image-area/festival-sertanejo.jpg",
     "date": "08 MAR",
     "name": "Festival Sertanejo",
     "description": "Com os maiores nomes do sertanejo.",
@@ -94,7 +94,7 @@
     ]
   },
   {
-    "image": "../img/section-image-area/sunset beats.jpg",
+    "image": "../../img/section-image-area/sunset beats.jpg",
     "date": "02 JUN",
     "name": "Sunset Beats",
     "description": "A vibe do verão em um só evento.",
@@ -115,7 +115,7 @@
     ]
   },
   {
-    "image": "../img/section-image-area/hallowen.jpg",
+    "image": "../../img/section-image-area/hallowen.jpg",
     "date": "30 OUT",
     "name": "Halloween Party",
     "description": "Uma noite assustadora e divertida.",

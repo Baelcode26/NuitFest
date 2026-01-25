@@ -112,7 +112,7 @@ function loginUser(){
         form.email().value, form.password().value
     ).then(response =>{
         hidenLoading()
-       window.location.href = "../pages/home/home.html"
+       window.location.href = "pages/home/home.html"
     }).catch(error =>{
         hidenLoading()
         alert(getErrorMessage(error))

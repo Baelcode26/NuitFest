@@ -67,7 +67,7 @@ let listaDeEventosGlobal = [];
 //carrega os eventos disponiveis no json
 async function carregarEventos() {
     try {
-        const resposta = await fetch("/pages/home/events.json");
+        const resposta = await fetch("events.json");
         const eventos = await resposta.json();
         listaDeEventosGlobal = eventos; 
 

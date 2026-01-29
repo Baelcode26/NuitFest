@@ -214,3 +214,51 @@ main{
 }
 
 .btn-main:hover{ background-color: #5a0d3b;}
+
+
+@media (max-width:850px){
+    .payment-container h3{
+        font-size: 1rem;
+    }
+    .method-option{
+        font-size: 1rem;
+    }
+    .event-info-resumo h3{
+        font-size: 1rem;
+    }
+
+    .event-info-resumo p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px){
+    .ticket-header{
+        flex-direction: column;
+    }
+    .ticket-header img{
+        width: 100%;
+    }
+
+    .item-resumo{
+        font-size: 0.7rem;
+    }
+
+    .ticket-body p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 450px){
+    .total-resumo{
+        font-size: 0.8rem;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .ticket-header img{
+        display: none;
+    }
+}

@@ -79,3 +79,10 @@ btnFinalizar.addEventListener("click", (e)=>{
         
     }
 })
+
+
+const backHome = document.querySelector(".back-home")
+
+backHome.addEventListener("click",()=>{
+    window.location.href = "../home/home.html"
+})

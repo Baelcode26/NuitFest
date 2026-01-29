@@ -581,6 +581,13 @@ header nav ul .active {
 }
 
 @media (max-width: 760px){
+
+
+    .image-area-events .grid-area .img-area .img-info {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
     .menu-area{
         width: 200px;
     }
@@ -626,6 +633,8 @@ header nav ul .active {
 @media (max-width: 681px){
 
 
+
+
      .section-text-area h1{
         font-size: 1.6rem;
         max-width: 70%;
@@ -640,7 +649,29 @@ header nav ul .active {
     }
 }
 
-@media (max-width: 570px){
+@media (max-width: 680px){
+
+    .event-image-banner img {
+        width: 130px;
+        height: 148px;
+    }
+
+    .modal-details-area {
+        padding: 10px;
+    }
+
+    .modal-img-area{
+        padding: 10px;
+    }
+    .content-event{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sector-item-card{
+        padding: 6px;
+        margin-top: 8px;
+    }
 
     .menu-area{
         width: 140px;
@@ -668,8 +699,39 @@ header nav ul .active {
 
 
 @media (max-width: 460px) {
+
+    .btn-buy-now{
+        padding: 10px;
+    }
+
+    #price-display{
+        font-size: 1.2rem;
+    }
+
+    .description-container h3{
+        font-size: 0.9rem;
+    }
+
+    .description-container p{
+        font-size: 0.7rem;
+    }
+
+    .badge-parcela {
+        font-size: 0.7rem;
+        padding: 4px 15px;
+    }
+
+    .event-text-info p {
+        font-size: 0.7rem;
+    }
+
+    .event-text-info h1 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
     .section-text-area h3{
-          max-width: 70%;
+        max-width: 70%;
     }
 }
 
@@ -677,6 +739,8 @@ header nav ul .active {
     .events-area .content .image-area-events .grid-area{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    
 
     .logo h1{
         font-size: 0.8rem;
@@ -692,5 +756,11 @@ header nav ul .active {
 
     header nav .profile .line {
         height: 2px;
+    }
+}
+
+@media (max-width: 380px){
+    .event-image-banner{
+        display: none;
     }
 }

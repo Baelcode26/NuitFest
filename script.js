@@ -1,13 +1,16 @@
-/**document.addEventListener('DOMContentLoaded', () => {
-    firebase.auth().onAuthStateChanged(user => {
-        if (user) {
+const facebookProvider = new firebase.auth.FacebookAuthProvider();
+
+function loginWithFacebook() {
+    showLoading();
+    firebase.auth().signInWithPopup(facebookProvider)
+        .then(() => {
             window.location.href = "pages/home/home.html";
-        } else {
-            toggleButtonsDisable();
-        }
-    });
-});
-**/
+        })
+        .catch((error) => {
+            hidenLoading();
+            alert("Erro: " + error.message);
+        });
+}
 
 //função chamada quando o campo de email e senha sofre alteração
 
